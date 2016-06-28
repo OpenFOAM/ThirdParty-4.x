@@ -3,8 +3,8 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<title>OpenFOAM-dev Third-Party packages</title>
-<!-- 2016-05-31 Tue 09:15 -->
+<title>OpenFOAM-4.x Third-Party packages</title>
+<!-- 2016-06-28 Tue 11:43 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <style type="text/css">
@@ -136,7 +136,7 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">OpenFOAM-dev Third-Party packages</h1>
+<h1 class="title">OpenFOAM-4.x Third-Party packages</h1>
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
@@ -242,7 +242,7 @@ The minimum version of gcc required is 4.5.0
 <h4 id="sec-3-2-1"><span class="section-number-4">3.2.1</span> Scotch</h4>
 <div class="outline-text-4" id="text-3-2-1">
 <p>
-Scotch-6.0.3 is provided with ThirdParty-dev or the original source pack
+Scotch-6.0.3 is provided with ThirdParty-4.x or the original source pack
 may be obtained from:
 </p>
 <ul class="org-ul">
@@ -266,7 +266,7 @@ may be obtained from:
 <div class="outline-text-3" id="text-3-3">
 <p>
 ParaView-5.0.1 patched to compile and install correctly is provided with
-ThirdParty-dev but older versions can be downloaded from <i>www.paraview.org</i>:
+ThirdParty-4.x but older versions can be downloaded from <i>www.paraview.org</i>:
 </p>
 <ul class="org-ul">
 <li>cmake          <a href="http://www.cmake.org/files/v3.2/cmake-3.2.1.tar.gz">http://www.cmake.org/files/v3.2/cmake-3.2.1.tar.gz</a>
@@ -313,8 +313,8 @@ The ParaView-4.3.1/4.4.0/5.0.0 source-pack provided by KitWare will not
 build and install correctly without a minor correction: lines 653-656
 (650-653 in ParaView-5.0.0, 659-662 in ParaView-5.0.1) must be removed or
 commented from file
-<i>ThirdParty-dev/ParaView-<sup><a id="fnr.1" name="fnr.1" class="footref" href="#fn.1">1</a></sup>.?.?/Qt/Components/CMakeLists.txt</i> after
-unpacking and renaming the ParaView-<sup><a id="fnr.1.100" name="fnr.1.100" class="footref" href="#fn.1">1</a></sup>.?.? directory.  This is because the
+<i>ThirdParty-4.x/ParaView-[45].?.?/Qt/Components/CMakeLists.txt</i> after
+unpacking and renaming the ParaView-[45].?.? directory.  This is because the
 file ui_pqExportStateWizard.h referred to in
 </p>
 <div class="org-src-container">
@@ -361,7 +361,7 @@ The following cmake files
 </ul>
 <p>
 specifically limit the gcc versions supported.  To add support gcc-6.?.?
-replace '<sup><a id="fnr.2" name="fnr.2" class="footref" href="#fn.2">2</a></sup>' with '<sup><a id="fnr.3" name="fnr.3" class="footref" href="#fn.3">3</a></sup>'
+replace '[345]' with '[3456]'
 </p>
 </div>
 </div>
@@ -391,22 +391,10 @@ change to the vtkXOpenGLRenderWindow.cxx file in ParaView: Uncomment line 30
 </div>
 </div>
 </div>
-<div id="footnotes">
-<h2 class="footnotes">Footnotes: </h2>
-<div id="text-footnotes">
-
-<div class="footdef"><sup><a id="fn.1" name="fn.1" class="footnum" href="#fnr.1">1</a></sup> <p>DEFINITION NOT FOUND.</p></div>
-
-<div class="footdef"><sup><a id="fn.2" name="fn.2" class="footnum" href="#fnr.2">2</a></sup> <p>DEFINITION NOT FOUND.</p></div>
-
-<div class="footdef"><sup><a id="fn.3" name="fn.3" class="footnum" href="#fnr.3">3</a></sup> <p>DEFINITION NOT FOUND.</p></div>
-
-
 </div>
-</div></div>
 <div id="postamble" class="status">
-<p class="date">Date: 31th May 2016</p>
-<p class="date">Created: 2016-05-31 Tue 09:15</p>
+<p class="date">Date: 28st June 2016</p>
+<p class="date">Created: 2016-06-28 Tue 11:43</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
